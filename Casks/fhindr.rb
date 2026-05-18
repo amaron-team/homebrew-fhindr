@@ -1,13 +1,13 @@
 cask "fhindr" do
   arch arm: "-arm64", intel: ""
 
-  version "1.4.4"
+  version "1.5.0"
 
   # Build sha's arm64 and normal dmg
-  sha256 arm:   "528e96febcc6157d5a194224e101011133dd9333069a0085cb722192702ef6d1",
-         intel: "c802d4b6aefaa24568af05eab5276dc410f16b00ef8082db22bc1f58729fa9ad"
+  sha256 arm:   "8457d0e7b0265074d40be5cbf421486f84ac4ac6eff4a51a470cf9af49360bbe",
+         intel: "728fd839969494b508bca0258eb8fa19494bb3074818aafaead303a95ac1a225"
 
-  url "https://github.com/amaron-team/fhindr/releases/download/1.4.4/Fhindr-1.4.2#{arch}.dmg"
+  url "https://github.com/amaron-team/fhindr/releases/download/#{version}/Fhindr-#{version}#{arch}.dmg"
   name "Fhindr"
   desc "Visualization tool for FHIR (Fast Healthcare Interoperability Resources)"
   homepage "https://github.com/amaron-team/fhindr"
